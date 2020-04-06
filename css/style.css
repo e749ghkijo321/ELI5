@@ -1,0 +1,311 @@
+body {
+    background-color: #222222;
+    font-family: 'Raleway', sans-serif;
+    font-family: 微軟正黑體;
+    background-color: #222222;
+    background-image: url(http://www.transparenttextures.com/patterns/binding-dark.png);
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+
+html {
+    font-size: 100%;
+}
+
+h2 {
+    width: fit-content;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #e29072;
+    letter-spacing: 5px;
+    border: 1px #e29072 solid;
+    padding: 5px;
+    margin: 0 auto;
+}
+
+p.lead {
+    letter-spacing: 5px;
+    color: #fff;
+    background-color: #464646;
+    box-shadow: #0c0c0c -2px 0px 6px;
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+    word-break: break-all;
+}
+
+p.detail{
+	text-align: justify;
+    color: #b1b1b1;
+    font-size: 0.9rem;
+    letter-spacing: 3px;
+    padding: 0 0.5rem;
+}
+
+.lead {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+img {
+    max-width: 100%;
+}
+
+nav .row {
+    margin-left: 0px;
+    width: 100%;
+    height: 8vh;
+    color: #737373;
+    letter-spacing: 3px;
+    padding: 1.2% 3%;
+    font-weight: bold;
+    font-size: 19px;
+
+}
+
+.bands {
+    z-index: 99999;
+    position: fixed;
+    bottom: 0;
+    left: 5%;
+    display: block;
+}
+
+.bands div p {    
+    background-color: #464646;
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+    word-break: break-all;
+    color: #fff;
+    letter-spacing: 5px;
+    border: 1px #e29072 solid;
+    box-shadow: #0c0c0c 0px 0px 6px;
+}
+
+
+
+.bands div p:hover {
+    font-weight: bold;
+    color: #fff;
+    background-color: #ef8d8d96;
+    box-shadow: #a9a9a9 0px 0px 6px;
+}
+
+
+
+
+#big {
+    display: none;
+}
+
+
+#small {
+    display: none;
+}
+
+
+.right_info {
+    border-bottom: 1px solid #e6a2a240;
+    padding: 10% 0;
+}
+
+.left_info {
+    border-bottom: 1px solid #e6a2a240;
+    padding: 10% 0;
+}
+
+.noborder {
+    border: none;
+}
+
+.selectbar {
+    position: absolute;
+    width: 100%;
+    height: 3vh;
+    bottom: 0;
+}
+
+
+.videoside{
+	box-shadow: 0px 0px 10px #4e4e4e;
+}
+
+
+.textside {
+    padding-top: 5%;
+    padding-right: 3%;
+    background-color: #3e3e3e47;
+    -ms-overflow-style: none;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+.col-md-12.textside {
+    padding-top: 0;}
+
+
+
+
+.textside::-webkit-scrollbar {
+    display: none;
+}
+
+.col-md-6.selectbar {
+    top: unset;
+    left: 0;
+    z-index: 99999;
+    bottom: 10%;
+}
+
+
+
+.col-md-12.selectbar {
+    position: fixed;
+    width: 100%;
+    height: 3vh;
+    bottom: unset;
+    top: 6%;
+    z-index: 9999;
+}
+
+.embed-container {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    max-width: 100%;
+    text-align: center;
+}
+
+.col-md-6 .embed-container iframe {
+    box-shadow: 0px 0px 10px #867e7e;
+    position: absolute;
+    top: 27%;
+    left: 10%;
+    width: 80%;
+    height: 45%;
+}
+
+
+
+.col-md-12 .embed-container iframe {
+    box-shadow: 0px 0px 10px #867e7e;
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    width: 70%;
+    height: 70%;
+}
+
+
+.col-md-6 h1 {
+    position: absolute;
+    color: #fff;
+    top: 17%;
+    left: 10%;
+    letter-spacing: 10px;
+    font-size: 1.5rem;
+}
+
+
+
+
+.col-md-12 h1 {
+    position: absolute;
+    color: #fff;
+    top: 11%;
+    left: 15%;
+    letter-spacing: 10px;
+    font-size: 1.5rem;
+}
+
+
+
+
+
+
+.carousel-control-next,
+.carousel-control-prev {
+    z-index: 99999;
+    width: 5%;
+    padding-top: 2%;
+    -ms-flex-align: unset;
+    align-items: unset;
+}
+
+.bg-dark {
+    background-color: #272727 !important;
+}
+
+
+
+@media (max-width: 767px) {
+    .bands {
+        display: none;
+    }
+
+    .carousel-control-next,
+    .carousel-control-prev {
+        padding-top: 4%;
+        position: fixed;
+    }
+
+    nav .row {
+        margin-left: 0px;
+        width: 100%;
+        height: 8vh;
+        color: #737373;
+        letter-spacing: 2px;
+        padding: 2.3% 0%;
+        font-weight: bold;
+        font-size: 13px;
+    }
+
+    h1 {
+        top: 18%;
+        letter-spacing: 8px;
+        font-size: 1.2rem;
+    }
+
+    .selectbar,
+    .col-md-12.selectbar,
+    .col-md-6.selectbar {
+        position: absolute;
+        width: 100%;
+        height: 3vh;
+        top: 21%;
+    }
+
+    .textside {
+        padding: 22px;
+        height: auto;
+        overflow-y: visible;
+    }
+
+
+
+    .carousel-indicators {
+        position: absolute;
+        top: unset;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .selectbar,
+    .col-md-12.selectbar,
+    .col-md-6.selectbar {
+        top: 23%;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+    h2 {
+        font-size: x-small;
+    }
+}
+
+@media (min-width: 980px) {}
+
+@media (min-width: 1200px) {}
